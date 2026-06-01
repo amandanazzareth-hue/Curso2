@@ -1,16 +1,17 @@
-let contaLuz, contaAgua, contaInternet, contaAluguel, contaMercado
+let notaMatemática, notaPortuguês, notaQuímica, notaFísica, notaBiologia, notaGeografia, notaHistória
 let soma
-let subtracao
-let salario
+let media
 
-contaLuz =  parseInt( prompt("informe sua conta de Luz"))
-contaAgua =  parseInt( prompt("informe sua conta de Água"))
-contaInternet =  parseInt( prompt("informe sua conta de Internet"))
-contaAluguel =  parseInt( prompt("informe sua conta de Aluguel"))
-contaMercado = parseInt( prompt("informe sua conta de Mercado"))
+notaMatemática =  parseInt( prompt("informe sua nota de Matemática"))
+notaPortuguês =  parseInt( prompt("informe sua nota de Português"))
+notaQuímica =  parseInt( prompt("informe sua nota de Química"))
+notaFísica =  parseInt( prompt("informe sua nota de Física"))
+notaBiologia =  parseInt( prompt("informe sua nota de Biologia"))
+notaGeografia =  parseInt( prompt("informe sua nota de Geografia"))
+notaHistória = parseInt( prompt("informe sua nota de História"))
 
-soma = contaLuz + contaAgua + contaInternet + contaAluguel + contaMercado
-salario = 2500
-subtracao = salario - soma
+soma = notaMatemática + notaPortuguês + notaQuímica + notaFísica + notaBiologia + notaGeografia + notaHistória
 
-alert( "O resto é " + subtracao)
+media = Math.round(soma/6)
+
+alert( "A media é " + media)
